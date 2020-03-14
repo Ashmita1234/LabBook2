@@ -1,0 +1,30 @@
+
+    
+    <h1>Angular 2 Operation</h1>
+
+       <label>ID</label>
+     <input type="text" 
+     [(ngModel)]="Id" style="margin-left: 92px;">
+    
+      <br><br>
+      <label>Name</label>
+     <input type="text" 
+     [(ngModel)]="Name" style="margin-left: 65px;">
+    
+      <br><br>
+      <label>Salary</label>
+     <input type="text" 
+     [(ngModel)]="Salary" style="margin-left: 65px;">
+    
+      <br><br>
+      <label>Department</label>
+     <input type="text" 
+     [(ngModel)]="Department" style="margin-left: 23px;">
+    
+      <br><br>
+      <button 
+      class="btn btn-primary"
+      (click)="onClick()">Add Employee</button>
+     
+      <p>{{Id}} {{Name}} {{Salary}} {{Department}}</p>
+   

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+ .red {
+            color:red;
+        }
+</style>
+<body>
+
+	<h1><center>Candidate Information</center></h1>
+<form >
+	<table align="center" bgcolor="#99bbff">
+	
+	<div class="control">
+  <tr> <td> <label for="name">Name<span class="red" >  *
+   </span></td>
+   </label><td ><input class="required" id="name" type="text" pattern="[A-Za-z]+" maxlength="15"/></td>
+</label><tr>
+  </div>
+
+  <div class="control">
+ <tr><td> <label for="password">Password<span class="red">  * </span></td>
+   </label><td><input class="required" id="password" type="text" pattern="[a-zA-Z0-9-]+" maxlength="15"
+   	/></td></tr>
+  </div>
+
+   <div class="control">
+    <tr><td><label for="phone">Phone number
+    <span class="red">  *
+   </span></td></label>
+  <td ><input class="required" id="phone" type="tel"  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" maxlength="10"/></td></tr>
+</div>
+
+  <div class="control">
+  	<tr><td><label for="gen">Gender
+    <span class="red">  *
+   </span></td></label>
+    <td><input class="required" type = "radio" name = "gender" value = "male" > Male
+         <input class="required" type = "radio" name = "gender" value = "female" > Female</td></tr>
+</div>
+
+<div class="control">
+<tr><td><label for="date">Date of Birth
+    <span class="red">  *
+   </span></td></label>
+ <td><input class="required" type="date" id="dateSelect" required></td></tr>
+</div>
+
+<div class="control">
+<tr><td><label for="email">Email
+    <span class="red">  *
+   </span></td></label>
+   <td><input class="required" type="email" id="email" name="email"></td></tr>
+</div>
+
+<div class="control">
+<tr><td><label for="qualification">Highest Qualification
+    <span class="red">  *
+   </span></td></label>
+<td><select name = "dropdown" class="required">
+			<option value = "qualification" selected>Select Highest Qualification</option>
+            <option value = "SSC">SSC</option>
+            <option value = "HSC">HSC</option>
+            <option value = "Btech">Btech</option>
+            <option value = "MTech">MTech</option>
+            <option value = "MBA">MBA</option>
+            <option value = "MSc">MSc</option>
+            <option value = "BSC">BSC</option>
+         </select></td></tr>
+     </div>
+
+     <div class="control">
+<tr><td><label for="course">Course Interested in
+    <span class="red">  *
+   </span></td></label>
+
+   <td><input class="required" type = "checkbox" name = "java" value = "on"> Java
+         <input class="required" type = "checkbox" name = "html5" value = "on"> HTML 5
+         <input class="required" type = "checkbox" name = "css 3" value = "on"> CSS 3
+         <input class="required" type = "checkbox" name = "angular" value = "on"> Angular JS
+         <input class="required" type = "checkbox" name = "jquery" value = "on"> JQuery
+     </td>
+ </tr>
+</div>
+
+
+  <div class="control">
+<tr><td><label for="comments">Comments : (Mention External Certifications if any)
+    </td></label>  <td>
+   <textarea rows = "5" cols = "50" name = "description">
+            
+         </textarea>
+          </td> 
+         </tr>
+         </div>   
+
+         <div class="control">
+<tr><td><label for="upload">Upload Degree/External Certificates
+   <span class="red">  *
+   </span></td></label>
+    <td>
+    	<input class="required" type="file" id="myfile" name="myfile"></td>
+</tr></div>
+
+<tr>
+	<td></td>
+	<td><input type = "submit" name = "submit" value = "Submit Information" />
+	<input type = "button" name = "clear"  value = "Clear" />
+</td>
+</tr>
+</table>
+</form>
+<p align="center"> <font color="red" >All fields marked (*) are mandatory</font></p>
+</body>
+</html>
